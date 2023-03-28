@@ -193,7 +193,7 @@ void Siga::SalvaCSV(string arquivo_csv)
 
     // abrir arquivo TXT para escrever nele
     ofstream outFile;
-    outFile.open("arquivo_csv", ios::out);
+    outFile.open(arquivo_csv_path);
     if(!outFile.is_open())
     {
         cout << "Erro ao abrir arquivo CSV" << endl;
